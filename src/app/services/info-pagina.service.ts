@@ -37,7 +37,7 @@ export class InfoPaginaService {
     .subscribe( (resp: any[]) => {
       
       this.equipo = resp;
-      console.log(resp);
+      //console.log(resp);
       // tslint:disable-next-line: no-string-literal
       // console.log(resp['email']);
     });
