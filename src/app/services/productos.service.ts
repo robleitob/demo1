@@ -39,14 +39,14 @@ export class ProductosService {
   buscarProducto(termino: string){
 
     if(this.productos.length ===0){
-      //cargar productos
+      // cargar productos
       this.cargarProductos().then(() => {
-        //ejecuta despues de cargar productos
-        //aplicar filtro
+        // ejecuta despues de cargar productos
+        // aplicar filtro
         this.filtrarProductos(termino);
       })
-    }else{
-      //Aplicar el filtro normal
+    } else {
+      // Aplicar el filtro normal
       this.filtrarProductos( termino );
     }
 
@@ -55,7 +55,6 @@ export class ProductosService {
   private filtrarProductos( termino: string ) {
     // console.log(this.productos);
     this.productosFiltrado = [];
-    
     termino = termino.toLocaleLowerCase();
 
     this.productos.forEach ( prod => {
