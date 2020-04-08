@@ -1,36 +1,46 @@
 <div class="ae-grid au-xs-ta-center au-mb-4">
       
+  <div class="ae-grid au-pt-2">
+    <div class="ae-grid__item item-lg-8 item-lg--offset-2">
+      <h4 class="ae-u-bolder">The Dream Team</h4>
+      <p>La excelencia de una institución parte con tener un recurso humano de calidad. Los chicos de informática son un claro ejemplo de esto....</p>
+    </div>
+  </div>
+  
+  
   <div *ngFor="let persona of infoService.equipo" class="animated fadeIn delay-1s ae-grid__item item-lg-4 ae-kappa au-mb-3">
     <img [src]="persona.url" alt="" class="au-mb-3">
         <h5 class="ae-u-bolder au-mt-2">{{ persona.nombre}}</h5>
-        <p class="ae-u-bolder au-mb-3">{{persona.subtitulo}}</p>
+        <p class="ae-u-bolder au-mb-3">{{ persona.subtitulo}}</p>
         <p class="au-lg-ta-left au-mb-3 au-pl-4 au-pr-4">{{persona.frase}}</p><a target="_blank" href="https://twitter.com/{{persona.twitter}}" class="ae-u-bolder au-underline">{{persona.twitter}}</a>
-      </div>
+  </div>
       
 </div>
-    <div class="ae-grid au-pt-2">
-      <div class="ae-grid__item item-lg-8 item-lg--offset-2">
-        <h4 class="ae-u-bolder">Title example</h4>
-        <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
-      </div>
-    </div>
-    <div class="ae-grid ae-grid--alt au-xs-ptp-1">
+    
+<div class="ae-grid ae-grid--alt au-xs-ptp-1">
       <div class="ae-grid__item--alt item-lg-4">
-        <h6 class="ae-u-boldest">About Us</h6>
-        <p class="au-lh-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <h6 class="ae-u-boldest">Quienes Somos</h6>
+        <p class="au-lh-3">
+          Canal 13 es una empresa de multimedios – integrada por la señal de televisión abierta Canal 13, los canales de televisión de pago 13C y REC TV, el portal web 13.cl, las radios T13 Radio, Play FM, Sonar FM y Oasis FM, además de contenido multiplataforma y negocios derivados.</p>
       </div>
       <div class="ae-grid__item--alt item-lg-4">
-        <h6 class="ae-u-boldest">Our Mission</h6>
+        <h6 class="ae-u-boldest">Nuestra Mision</h6>
         <p class="au-lh-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
       <div class="ae-grid__item--alt item-lg-4">
-        <h6 class="ae-u-boldest">Our Clients</h6>
+        <h6 class="ae-u-boldest">Nuestros clientes</h6>
         <p class="au-lh-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
         <p class="au-lh-3">Nemo enim ipsam voluptatem quia voluptas</p>
       </div>
-    </div>
-    <p class="au-flex au-pt-4 group-buttons"><a href="portfolio.html" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">View Our Portfolio<span class="arrow-cont">
-          <svg>
-            <use xlink:href="assets/img/symbols.svg#arrow"></use>
-          </svg></span></a></p>
-  
+</div>
+
+<p class="au-flex au-pt-4 group-buttons">
+  <a href="#" class="au-mt-4 arrow-button arrow-button--right arrow-button--out">Vea nuestros productos
+    <span class="arrow-cont">
+        <svg>
+        <use xlink:href="assets/img/symbols.svg#arrow"></use>
+        </svg>
+    </span>
+  </a>
+</p>
+      
